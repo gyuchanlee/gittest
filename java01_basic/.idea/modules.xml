@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java01_basic.iml" filepath="$PROJECT_DIR$/java01_basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java02_if/java02_if.iml" filepath="$PROJECT_DIR$/../java02_if/java02_if.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java03_loop/java03_loop.iml" filepath="$PROJECT_DIR$/../java03_loop/java03_loop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java04_array/java04_array.iml" filepath="$PROJECT_DIR$/../java04_array/java04_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java05_class/java05_class.iml" filepath="$PROJECT_DIR$/../java05_class/java05_class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java06_inheritance/java06_inheritance.iml" filepath="$PROJECT_DIR$/../java06_inheritance/java06_inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java07_abstract/java07_abstract.iml" filepath="$PROJECT_DIR$/../java07_abstract/java07_abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java08_interface/java08_interface.iml" filepath="$PROJECT_DIR$/../java08_interface/java08_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java09_nested/java09_nested.iml" filepath="$PROJECT_DIR$/../java09_nested/java09_nested.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java10_Collection/java10_Collection.iml" filepath="$PROJECT_DIR$/../java10_Collection/java10_Collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java11_io/java11_io.iml" filepath="$PROJECT_DIR$/../java11_io/java11_io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../studyyy/studyyy.iml" filepath="$PROJECT_DIR$/../studyyy/studyyy.iml" />
+    </modules>
+  </component>
+</project>
