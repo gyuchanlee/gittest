@@ -1,0 +1,9 @@
+apple
+banana
+strawberry
+blueberry
+pear
+사과
+딸기
+zzz
+
