@@ -169,5 +169,5 @@ git version 2.29.2.windows.3
   수정한 파일의 내용은 사라지고 이전 버전의 파일 내용이 그대로 다시 나온다.
 
 (3) 되돌리기
-git reset --hard
-git revert 버전아이디 (역순으로 해야 함)
+ git reset --hard
+ git revert 버전아이디 (역순으로 해야 함)
