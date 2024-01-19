@@ -101,4 +101,43 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
     
     // 최소값 삭제 연산
+    public void deleteMin() {
+        root = deleteMin(root);
+        root.color = BLACK;
+    }
+
+    public Node deleteMin(Node node) {
+        if (node.left == null) {
+            return null;
+        }
+        if (!isRed(node.left) && !isRed(node.left.left)) {
+            node = moveRedLeft(node);
+        }
+        node.left = deleteMin(node.left);
+        return fixUp(node);
+    }
+
+    private Node moveRedLeft(Node node) {
+        flipColors(node);
+        if (isRed(node.right.left)) {
+            node.right = rotateRight(node.right);
+            node = rotateLeft(node);
+            flipColors(node);
+        }
+        return node;
+    }
+
+    // 동일 블랙 링크 규칙, 레드 링크 좌편향 규칙에 어긋나는 부분을 수정.
+    private Node fixUp(Node node) {
+        if (isRed(node.right)) {
+            node = rotateLeft(node);
+        }
+        if (isRed(node.left) && isRed(node.left.left)) {
+            node = rotateRight(node);
+        }
+        if (isRed(node.left) && isRed(node.right)) {
+            flipColors(node);
+        }
+        return node;
+    }
 }
