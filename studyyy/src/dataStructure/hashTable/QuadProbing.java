@@ -15,7 +15,20 @@ public class QuadProbing <K, V>{
     public void put(K key, V data) {
         int initialpos = hash(key);
         int i = initialpos, j = 1, loop_limit = 20; // 저장 시도 횟수 제한
-
+        do {
+            if (a[i] == null) {
+                // 삽입 위치 발견
+                a[i] = key;
+                d[i] = data;
+                return;
+            }
+            if (a[i].equals(key)) {
+                d[i] = data; // 이미 값이 존재할때 갱신만.
+            }
+            i = (initialpos + j * j++) % M;
+            loop_limit -= 1;
+        } while (loop_limit > 0);
+        System.out.println("저장 실패!!");
     }
 
 }
